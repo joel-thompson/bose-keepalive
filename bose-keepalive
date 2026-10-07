@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "Keeping audio stream alive. Ctrl-C to stop."
+exec ffplay -nodisp -loglevel quiet -f lavfi -i anullsrc=r=44100:cl=stereo
